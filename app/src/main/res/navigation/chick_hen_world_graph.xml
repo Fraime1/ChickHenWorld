@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chick_hen_world_graph"
+    app:startDestination="@id/chickHenWorldLoadFragment">
+
+    <fragment
+        android:id="@+id/chickHenWorldLoadFragment"
+        android:name="com.chikegam.henwoldir.fergok.presentation.ui.load.ChickHenWorldLoadFragment"
+        android:label="ChickHenWorldLoadFragment" >
+        <action
+            android:id="@+id/action_chickHenWorldLoadFragment_to_chickHenWorldV"
+            app:destination="@id/chickHenWorldV"
+            app:popUpTo="@id/chick_hen_world_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/chickHenWorldV"
+        android:name="com.chikegam.henwoldir.fergok.presentation.ui.view.ChickHenWorldV"
+        android:label="ChickHenWorldV" />
+</navigation>

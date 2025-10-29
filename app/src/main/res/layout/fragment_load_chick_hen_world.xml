@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/chickHenWorldBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chick_hen_world_portain_background" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/chickHenWorldLoadingGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="chickHenWorldProgressText,chickHenWorldProgress" />
+
+    <TextView
+        android:id="@+id/chickHenWorldProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:text="Loading..."
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chickHenWorldProgress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/chickHenWorldProgress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminateTint="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/chickHenWorldLoadConnectionStateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:text="There is no internet connection"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/chickHenWorldNotiGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="chickHenWorldNotifText,chickHenWorldGrandButton,chickHenWorldSkipButton,chickHenWorldNotifText2" />
+
+    <TextView
+        android:id="@+id/chickHenWorldNotifText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Allow notifications about bonuses and promos"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chickHenWorldNotifText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineHeight="35dp" />
+
+    <Button
+        android:id="@+id/chickHenWorldGrandButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/ic_chick_hen_world_btn"
+        android:fontFamily="@font/adlam_display"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Yes, I Want Bonuses!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/chickHenWorldSkipButton"
+        app:layout_constraintEnd_toEndOf="@+id/chickHenWorldNotifText"
+        app:layout_constraintStart_toStartOf="@+id/chickHenWorldNotifText" />
+
+    <TextView
+        android:id="@+id/chickHenWorldSkipButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Skip"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chickHenWorldNotifText"
+        app:layout_constraintStart_toStartOf="@+id/chickHenWorldNotifText" />
+
+
+    <TextView
+        android:id="@+id/chickHenWorldNotifText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Stay tuned with best offers from our casino"
+        android:textColor="@color/white"
+
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/chickHenWorldGrandButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineHeight="35dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

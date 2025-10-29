@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Chick Hen World</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cards">Cards</string>
+    <string name="nav_collection">Collection</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="breed_of_the_day">Breed of the Day</string>
+    <string name="learn_more">Learn More</string>
+    <string name="collection_progress">Collection Progress</string>
+    <string name="breeds_discovered">breeds discovered</string>
+
+    <!-- Breed Details -->
+    <string name="origin">Origin</string>
+    <string name="characteristics">Characteristics</string>
+    <string name="appearance">Appearance</string>
+    <string name="behavior">Behavior</string>
+    <string name="productivity">Productivity</string>
+    <string name="interesting_facts">Interesting Facts</string>
+    <string name="add_to_collection">Add to Collection</string>
+    <string name="share">Share</string>
+
+    <!-- Breed Types -->
+    <string name="egg_laying">Egg Layer</string>
+    <string name="meat">Meat</string>
+    <string name="dual_purpose">Dual Purpose</string>
+    <string name="ornamental">Ornamental</string>
+
+    <!-- Collection -->
+    <string name="unlocked">Unlocked</string>
+    <string name="locked">Locked</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_alphabetical">Alphabetical</string>
+    <string name="sort_country">By Country</string>
+    <string name="sort_type">By Type</string>
+    <string name="achievements">Achievements</string>
+
+    <!-- Search -->
+    <string name="search_breeds">Search breeds…</string>
+    <string name="filters">Filters</string>
+    <string name="region">Region</string>
+    <string name="type">Type</string>
+    <string name="size">Size</string>
+    <string name="size_bantam">Bantam</string>
+    <string name="size_standard">Standard</string>
+    <string name="size_large">Large</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="clear_filters">Clear Filters</string>
+
+    <!-- Settings -->
+    <string name="notifications">Notifications</string>
+    <string name="daily_breed_notification">Daily breed notification</string>
+    <string name="theme">Theme</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="system_theme">System</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_breed">First Discovery</string>
+    <string name="achievement_first_breed_desc">Unlock your first breed</string>
+    <string name="achievement_10_breeds">Chicken Enthusiast</string>
+    <string name="achievement_10_breeds_desc">Discover 10 breeds</string>
+    <string name="achievement_25_breeds">Poultry Expert</string>
+    <string name="achievement_25_breeds_desc">Discover 25 breeds</string>
+    <string name="achievement_50_breeds">Master Collector</string>
+    <string name="achievement_50_breeds_desc">Discover 50 breeds</string>
+    <string name="achievement_all_asian">Asian Collection Complete</string>
+    <string name="achievement_all_asian_desc">Collect all Asian breeds</string>
+    <string name="achievement_all_european">European Collection Complete</string>
+    <string name="achievement_all_european_desc">Collect all European breeds</string>
+</resources>

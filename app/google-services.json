@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712198108485",
+    "project_id": "chikhenworld",
+    "storage_bucket": "chikhenworld.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712198108485:android:813ac370dabc60d5327a2c",
+        "android_client_info": {
+          "package_name": "com.chikegam.henwoldir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzMiTkU6NUqqSGWnf8BWQ4lyi6gFiUlWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
