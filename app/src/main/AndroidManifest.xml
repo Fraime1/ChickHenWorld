@@ -21,6 +21,7 @@
         tools:replace="android:fullBackupContent,android:dataExtractionRules" >
         <activity
             android:name=".ChickHenWorldActivity"
+            android:screenOrientation="sensor"
             android:theme="@style/Theme.ChickHenWorld"
             android:exported="true" >
             <intent-filter>
