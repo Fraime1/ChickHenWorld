@@ -1,5 +1,7 @@
 package com.chikegam.henwoldir.ui.screens
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -12,6 +14,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.chikegam.henwoldir.ui.theme.*
 
@@ -22,6 +25,7 @@ fun SettingsScreen() {
     var selectedTheme by remember { mutableStateOf(ThemeOption.SYSTEM) }
     var showThemeDialog by remember { mutableStateOf(false) }
     val scrollState = rememberScrollState()
+    val context = LocalContext.current
 
     Column(
         modifier = Modifier
@@ -85,6 +89,16 @@ fun SettingsScreen() {
 
             // About Section
             SettingsSection(title = "About") {
+                SettingsItem(
+                    modifier = Modifier.clickable {
+                        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://chiickhenworld.com/privacy-policy.html"))
+                        context.startActivity(intent)
+                    },
+                    icon = Icons.Default.Build,
+                    title = "Privacy Policy",
+                    description = "Tap to read"
+                )
+                Spacer(modifier = Modifier.height(8.dp))
                 SettingsItem(
                     icon = Icons.Default.Info,
                     title = "Version",
@@ -300,12 +314,13 @@ fun SettingsClickableItem(
 
 @Composable
 fun SettingsItem(
+    modifier: Modifier = Modifier,
     icon: androidx.compose.ui.graphics.vector.ImageVector,
     title: String,
     description: String
 ) {
     Row(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .padding(12.dp),
         verticalAlignment = Alignment.CenterVertically
